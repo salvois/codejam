@@ -21,6 +21,11 @@ The repository contains the following programs. All of them produce correct outp
     * **StackManagementLarge**: I couldn't figure this one out by myself. This is from the analysis on the Code Jam website.
     * **TeleportersSmall**: first attempt to solve the Teleporters problem. Not appropriate for the large dataset.
     * **TeleportersLarge**: final attempt to solve the Teleporters problem, using a smarter approach appropriate for the large dataset.
+* Package **codejam2017.qualification**: Qualification round of Code Jam 2017.
+    * **OversizedPancakeFlipper**: not the most optimized version, but able to handle the large dataset without problems.
+    * **TidyNumbers**: finds tidy numbers with an algorithm proportional to the count of digits.
+    * **BathroomStalls**: I'm particularly happy with the constant-time solution I found.
+    * **FashionShow**: I gave this a lot of thought. Two tricky observations were needed to handle both datasets.
 
 ## Why Java?
 IDE support, debugger, standard library, good performance, ubiquity.\
