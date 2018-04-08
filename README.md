@@ -33,13 +33,19 @@ For Code Jam 2018, I'm actually participating to the contest. Below are my solut
 either as submitted or coded on a second thought. Due to the new contest rules, where dataset
 files are no longer provided, the files under the *codejam2018* subdirectories of *resources*
 are the ones I assembled from the provided examples and my own test cases.
-* Package **codejam2018.practice**: problems of the practice session of the new platform,
-  that I passed with 75/75 points.
+Unless otherwise noted, everything is judged as correct.
+* Package **codejam2018.practice**: problems of the practice session of the new platform.
     * **NumberGuessing**: the new interactive type of problem.
     * **SenateEvacuationMT**: the Senate Evacuation problem, solved with multiple threads just because.
     * **Steed2CruiseControl**: Steed 2: Cruise Control turned out to be so simple I couldn't believe it!
     * There is no source for the fourth problem, Bathroom Stalls, because I lifted it as is
       from my Code Jam 2017 solutions (see package *codejam2017.qualification*).
+* Package **codejam2018.qualification**: Qualification round for Code Jam 2018.
+    * **SavingTheUniverseAgain**: pretty straightforward  solution for the Saving The Universe Again problem.
+    * **TroubleSortSmallMT**: solution for the small dataset (set 1) of the Trouble Sort problem. Unfortunately I misread the limits and incorrectly convinced myself that a multi-threaded solution was enough for the large dataset (set 2) too.
+    * **TroubleSortLarge**: the proper solution to the Trouble Sort problem, coded after the competition, hence not validated by the judge.
+    * **GoGopher**: to solve the interactive Go, Gopher! problem I opted for the simple approach of filling a 3-cell-tall strip from left to right.
+    * **CubicUfo**: solving the Cubic UFO geometric problem was a lot of fun. I played safely and tried to reproduce the evaluation of the judge, using binary search. Special thanks to the cubic candle lying in my kitchen!
 
 ## Why Java?
 IDE support, debugger, standard library, good performance, ubiquity.\
