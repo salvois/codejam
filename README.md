@@ -42,10 +42,23 @@ Unless otherwise noted, everything is judged as correct.
       from my Code Jam 2017 solutions (see package *codejam2017.qualification*).
 * Package **codejam2018.qualification**: Qualification round for Code Jam 2018.
     * **SavingTheUniverseAgain**: pretty straightforward  solution for the Saving The Universe Again problem.
-    * **TroubleSortSmallMT**: solution for the small dataset (set 1) of the Trouble Sort problem. Unfortunately I misread the limits and incorrectly convinced myself that a multi-threaded solution was enough for the large dataset (set 2) too.
-    * **TroubleSortLarge**: the proper solution to the Trouble Sort problem, coded after the competition, hence not validated by the judge.
-    * **GoGopher**: to solve the interactive Go, Gopher! problem I opted for the simple approach of filling a 3-cell-tall strip from left to right.
-    * **CubicUfo**: solving the Cubic UFO geometric problem was a lot of fun. I played safely and tried to reproduce the evaluation of the judge, using binary search. Special thanks to the cubic candle lying in my kitchen!
+    * **TroubleSortSmallMT**: solution for the small dataset (set 1) of the Trouble Sort problem.
+      Unfortunately I misread the limits and incorrectly convinced myself that
+      a multi-threaded solution was enough for the large dataset (set 2) too.
+    * **TroubleSortLarge**: the proper solution to the Trouble Sort problem,
+      coded after the competition, and validated by the judge in practice mode.
+    * **GoGopher**: to solve the interactive Go, Gopher! problem I opted for the
+      simple approach of filling a 3-cell-tall strip from left to right.
+    * **CubicUfo**: solving the Cubic UFO geometric problem was a lot of fun.
+      I played safely and tried to reproduce the evaluation of the judge, using
+      binary search. Special thanks to the cubic candle lying in my kitchen!
+* Package **codejam2018.round1a**: I was not awake enough for round 1A.
+  I coded these solutions after the round took place, and had them judged as correct in practice mode.
+    * **WaffleChoppers**: rectangular cumulative sums to the rescue.
+    * **BitParty**: that was fun! Bit Party had huge limits but required some
+      imagination to figure out that binary search was the key.
+    * **EdgyBaking**: A 0-1 knapsack problem, solvable with dynamic programming,
+      was well disguised under Mr. Maillard's edgy baking.
 
 ## Why Java?
 IDE support, debugger, standard library, good performance, ubiquity.\
