@@ -2,14 +2,15 @@
 
 This repository includes my solutions to the problems of the Google Code Jam 2017 and 2018 competitions.\
 The sources are in Java, and each package contains the solution to one of the rounds. Each source file contains a description of the algorithm used.\
-The *resources* directory contains input datasets, outputs and other support files.
-
-A NetBeans project is included to build the solutions, and the *runAll.sh* script can be used to run all programs at once,
-creating the outputs in the *resources* directory.
+The *resources* directory contains input datasets, outputs and other support files.\
+A NetBeans project is included to build the solutions.
 
 ## Code Jam 2017
 The repository contains the following programs. I wrote them for practice, and tested them against
-the (now old) Code Jam platform in practice mode, everything being judged as correct.
+the (now old) Code Jam platform in practice mode, everything being judged as correct.\
+The *runAll.sh* script in the root of the repository can be used to run all programs at once,
+creating the outputs in the *resources* directory.
+
 * Package **codejam2017.finals**: World Finals round of Code Jam 2017.
     * **DiceStraight**: solution for the Dice Straight problem.
     * **OperationGenetic**: first attempt to solve the Operation problem using a genetic approach. Failed to found global optima in a few cases.
@@ -27,6 +28,24 @@ the (now old) Code Jam platform in practice mode, everything being judged as cor
     * **TidyNumbers**: finds tidy numbers with an algorithm proportional to the count of digits.
     * **BathroomStalls**: I'm particularly happy with the constant-time solution I found.
     * **FashionShow**: I gave this a lot of thought. Two tricky observations were needed to handle both datasets.
+* Package **codejam2017.round1a**: Round 1A of Code Jam 2017.
+    * **AlphabetCake**: filling the alphabet cake horizontally then vertically.
+    * I have not yet solved Ratatouille and Play the dragon.
+* Package **codejam2017.round1b**: Round 1B of Code Jam 2017.
+    * Steed 2: Cruise Control can be found in the *codejam2018.practice* package of Code Jam 2018.
+    * **StableNeighbors**: the Stable Neigh-bors problem turned out to be tricky.
+      My solution is inspired by thread scheduling in operating systems.
+    * **PonyExpressSmall**: solution for the small dataset of the Pony Express problem,
+      where the resulting graph is a DAG.
+    * **PonyExpressLarge**: solution for the large dataset of the Pony Express problem,
+      using the Dijkstra's algorithm to find the shortest paths.
+* Package **codejam2017.round1c**: Round 1C of Code Jam 2017.
+    * **AmpleSyrup**: greedy solution to stack pancakes giving ample surface for syrup!
+    * **ParentingPartnering**: coalescing free time intervals between activities performed
+      by the same parent was the key to efficient parenting partnering.
+    * **CoreTrainingSmall1**: solution for the small dataset 1 of the Core Training problem,
+      maximizing the probability product by increasing the lowest probabilities.
+    * I was not able to figure out how to cope with small dataset 2 of the Core Training problem.
 
 ## Code Jam 2018
 For Code Jam 2018, I'm actually participating to the contest. Below are my solutions,
@@ -63,7 +82,8 @@ Unless otherwise noted, everything is judged as correct.
 ## Why Java?
 IDE support, debugger, standard library, good performance, ubiquity.\
 Why not, to name one, C++? Templates, basically. While I recognize templates are very useful,
-I think modern C++ has gone a little overboard with templates, and I hate error messages involving templates.
+I think modern C++ has gone a little overboard with templates, and I hate error messages involving templates.\
+I miss value types, generics on primitives and -very rarely- operator overloading, though.
 
 ## Licensing terms
 Permissive, two-clause BSD license.

@@ -22,3 +22,17 @@ java -cp dist/codejam.jar codejam2017.qualification.BathroomStalls < resources/c
 java -cp dist/codejam.jar codejam2017.qualification.BathroomStalls < resources/codejam2017/qualification/C-large-practice.in > resources/codejam2017/qualification/C-large-practice.out
 java -cp dist/codejam.jar codejam2017.qualification.FashionShow < resources/codejam2017/qualification/D-small-practice.in > resources/codejam2017/qualification/D-small-practice.out
 java -cp dist/codejam.jar codejam2017.qualification.FashionShow < resources/codejam2017/qualification/D-large-practice.in > resources/codejam2017/qualification/D-large-practice.out
+# Round 1A
+java -cp dist/codejam.jar codejam2017.round1a.AlphabetCake < resources/codejam2017/round1a/A-small-practice.in > resources/codejam2017/round1a/A-small-practice.out
+java -cp dist/codejam.jar codejam2017.round1a.AlphabetCake < resources/codejam2017/round1a/A-large-practice.in > resources/codejam2017/round1a/A-large-practice.out
+# Round 1B
+java -cp dist/codejam.jar codejam2017.round1b.StableNeighbors < resources/codejam2017/round1b/B-small-practice.in > resources/codejam2017/round1b/B-small-practice.out
+java -cp dist/codejam.jar codejam2017.round1b.StableNeighbors < resources/codejam2017/round1b/B-large-practice.in > resources/codejam2017/round1b/B-large-practice.out
+java -cp dist/codejam.jar codejam2017.round1b.PonyExpressSmall < resources/codejam2017/round1b/C-small-practice.in > resources/codejam2017/round1b/C-small-practice.out
+java -cp dist/codejam.jar codejam2017.round1b.PonyExpressLarge < resources/codejam2017/round1b/C-large-practice.in > resources/codejam2017/round1b/C-large-practice.out
+# Round 1C
+java -cp dist/codejam.jar codejam2017.round1c.AmpleSyrup < resources/codejam2017/round1c/A-small-practice.in > resources/codejam2017/round1c/A-small-practice.out
+java -cp dist/codejam.jar codejam2017.round1c.AmpleSyrup < resources/codejam2017/round1c/A-large-practice.in > resources/codejam2017/round1c/A-large-practice.out
+java -cp dist/codejam.jar codejam2017.round1c.ParentingPartnering < resources/codejam2017/round1c/B-small-practice.in > resources/codejam2017/round1c/B-small-practice.out
+java -cp dist/codejam.jar codejam2017.round1c.ParentingPartnering < resources/codejam2017/round1c/B-large-practice.in > resources/codejam2017/round1c/B-large-practice.out
+java -cp dist/codejam.jar codejam2017.round1c.CoreTrainingSmall1 < resources/codejam2017/round1c/C-small-practice-1.in > resources/codejam2017/round1c/C-small-practice-1.out
