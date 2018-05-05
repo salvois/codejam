@@ -30,7 +30,7 @@ import java.util.Scanner;
 
 /**
  * Lollipop Shop problem from Google Code Jam Round 1C 2018.
- * https://codejam.withgoogle.com/2018/challenges/0000000000007765/dashboard
+ * https://codejam.withgoogle.com/2018/challenges/0000000000007765/dashboard/000000000003e068
  * 
  * This algorithm simply tries to give each customer a lollipop every time
  * there is one matching one of his preferences.

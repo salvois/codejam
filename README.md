@@ -45,7 +45,10 @@ Unless otherwise noted, everything is judged as correct, either in contest or un
     * **AWholeNewWordLarge**: I didn't consider that brute-force would have worked
       for the large dataset too. And it costed me the contest...
     * **LollipopShop**: this solutions gives away less popular lollipops first.
-    * I have not yet solved Ant Stack.
+    * **AntStackSmall**: the small dataset of Ant Stack is yet another 0-1 knapsack.
+    * **AntStackLarge**: I needed help from the official Code Jam analysis for this.
+      This is similar to the knapsack, but with inverted logic.
+    * **AntStackGenerator.py**: Python script to find out the largest possible stack.
 
 ## Code Jam 2017
 The repository contains the following programs. I wrote them for practice, and tested them against
