@@ -63,16 +63,16 @@ public class AntStackLarge {
 
     private static int solve(int[] weights) {
         // Initialize the dp array
-        int dp[][] = new int[weights.length + 1][MAX_ANTS + 1];
+        long dp[][] = new long[weights.length + 1][MAX_ANTS + 1];
         for (int i = 0; i <= weights.length; i++) {
             for (int w = 1; w <= MAX_ANTS; w++) {
-                dp[i][w] = Integer.MAX_VALUE;
+                dp[i][w] = Long.MAX_VALUE;
             }
         }
         // Knapsack-like logic
         for (int i = 0; i < weights.length; i++) {
             for (int w = 1; w <= MAX_ANTS; w++) {
-                if (dp[i][w - 1] <= 6 * weights[i]) {
+                if (dp[i][w - 1] <= 6L * weights[i]) {
                     // i-th item would fit into the knapsack
                     dp[i + 1][w] = Math.min(
                             weights[i] + dp[i][w - 1], // use i-th item
@@ -87,7 +87,7 @@ public class AntStackLarge {
         int result = 0;
         for (int i = 0; i <= weights.length; i++) {
             for (int w = 1; w <= MAX_ANTS; w++) {
-                if (dp[i][w] < Integer.MAX_VALUE && w > result) {
+                if (dp[i][w] < Long.MAX_VALUE && w > result) {
                     result = w;
                 }
             }

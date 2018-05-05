@@ -13,8 +13,9 @@ import math
 stack_weight = 0
 last_weight = 1
 while last_weight <= 1_000_000_000:
-	if last_weight * 6 >= stack_weight:
-		print("{}\t{}".format(stack_weight, last_weight))
-		stack_weight += last_weight
-	else:
-		last_weight = math.ceil(stack_weight / 6)
+    if last_weight * 6 >= stack_weight:
+        print("{}\t{}".format(stack_weight, last_weight))
+        #print("{} ".format(last_weight), end="")
+        stack_weight += last_weight
+    else:
+        last_weight = math.ceil(stack_weight / 6)
