@@ -1,9 +1,51 @@
-# Solutions to Code Jam 2017 and 2018 problems
+# Solutions to problems of Code Jam 2018, 2017 and earlier
 
-This repository includes my solutions to the problems of the Google Code Jam 2017 and 2018 competitions.\
+This repository includes my solutions to the problems of the Google Code Jam competitions up to year 2018.\
 The sources are in Java, and each package contains the solution to one of the rounds. Each source file contains a description of the algorithm used.\
 The *resources* directory contains input datasets, outputs and other support files.\
 A NetBeans project is included to build the solutions.
+
+## Code Jam 2018
+For Code Jam 2018, I actually participated to the contest. Below are my solutions,
+either as submitted or coded on a second thought. Due to the new contest rules, where dataset
+files are no longer provided, the files under the *codejam2018* subdirectories of *resources*
+are the ones I assembled from the provided examples and my own test cases.
+Unless otherwise noted, everything is judged as correct, either in contest or under practice mode.
+* Package **codejam2018.practice**: problems of the practice session of the new platform.
+    * **NumberGuessing**: the new interactive type of problem.
+    * **SenateEvacuationMT**: the Senate Evacuation problem, solved with multiple threads just because.
+    * **Steed2CruiseControl**: Steed 2: Cruise Control turned out to be so simple I couldn't believe it!
+    * There is no source for the fourth problem, Bathroom Stalls, because I lifted it as is
+      from my Code Jam 2017 solutions (see package *codejam2017.qualification*).
+* Package **codejam2018.qualification**:
+    * **SavingTheUniverseAgain**: pretty straightforward  solution for the Saving The Universe Again problem.
+    * **TroubleSortSmallMT**: solution for the small dataset (set 1) of the Trouble Sort problem.
+      Unfortunately I misread the limits and incorrectly convinced myself that
+      a multi-threaded solution was enough for the large dataset (set 2) too.
+    * **TroubleSortLarge**: the proper solution to the Trouble Sort problem,
+      coded after the competition, and validated by the judge in practice mode.
+    * **GoGopher**: to solve the interactive Go, Gopher! problem I opted for the
+      simple approach of filling a 3-cell-tall strip from left to right.
+    * **CubicUfo**: solving the Cubic UFO geometric problem was a lot of fun.
+      I played safely and tried to reproduce the evaluation of the judge, using
+      binary search. Special thanks to the cubic candle lying in my kitchen!
+* Package **codejam2018.round1a**:
+    * **WaffleChoppers**: rectangular cumulative sums to the rescue.
+    * **BitParty**: that was fun! Bit Party had huge limits but required some
+      imagination to figure out that binary search was the key.
+    * **EdgyBaking**: A 0-1 knapsack problem, solvable with dynamic programming,
+      was well disguised under Mr. Maillard's edgy baking.
+* Package **codejam2018.round1b**:
+    * **RoundingError**: Rounding Error could be solved by increasing percentages
+      whose fractional part is < 0.5.
+    * I have not yet solved Mysterious Road Signs and Transmuation.
+* Package **codejam2018.round1c**: the end of my Code Jam :(
+    * **AWholeNewWordSmall**: Brute-force scan of all the 26^2 combinations for
+      test set 1 of the A Whole New Word problem.
+    * **AWholeNewWordLarge**: I didn't consider that brute-force would have worked
+      for the large dataset too. And it costed me the contest...
+    * **LollipopShop**: this solutions gives away less popular lollipops first.
+    * I have not yet solved Ant Stack.
 
 ## Code Jam 2017
 The repository contains the following programs. I wrote them for practice, and tested them against
@@ -47,37 +89,11 @@ creating the outputs in the *resources* directory.
       maximizing the probability product by increasing the lowest probabilities.
     * I was not able to figure out how to cope with small dataset 2 of the Core Training problem.
 
-## Code Jam 2018
-For Code Jam 2018, I'm actually participating to the contest. Below are my solutions,
-either as submitted or coded on a second thought. Due to the new contest rules, where dataset
-files are no longer provided, the files under the *codejam2018* subdirectories of *resources*
-are the ones I assembled from the provided examples and my own test cases.
-Unless otherwise noted, everything is judged as correct.
-* Package **codejam2018.practice**: problems of the practice session of the new platform.
-    * **NumberGuessing**: the new interactive type of problem.
-    * **SenateEvacuationMT**: the Senate Evacuation problem, solved with multiple threads just because.
-    * **Steed2CruiseControl**: Steed 2: Cruise Control turned out to be so simple I couldn't believe it!
-    * There is no source for the fourth problem, Bathroom Stalls, because I lifted it as is
-      from my Code Jam 2017 solutions (see package *codejam2017.qualification*).
-* Package **codejam2018.qualification**: Qualification round for Code Jam 2018.
-    * **SavingTheUniverseAgain**: pretty straightforward  solution for the Saving The Universe Again problem.
-    * **TroubleSortSmallMT**: solution for the small dataset (set 1) of the Trouble Sort problem.
-      Unfortunately I misread the limits and incorrectly convinced myself that
-      a multi-threaded solution was enough for the large dataset (set 2) too.
-    * **TroubleSortLarge**: the proper solution to the Trouble Sort problem,
-      coded after the competition, and validated by the judge in practice mode.
-    * **GoGopher**: to solve the interactive Go, Gopher! problem I opted for the
-      simple approach of filling a 3-cell-tall strip from left to right.
-    * **CubicUfo**: solving the Cubic UFO geometric problem was a lot of fun.
-      I played safely and tried to reproduce the evaluation of the judge, using
-      binary search. Special thanks to the cubic candle lying in my kitchen!
-* Package **codejam2018.round1a**: I was not awake enough for round 1A.
-  I coded these solutions after the round took place, and had them judged as correct in practice mode.
-    * **WaffleChoppers**: rectangular cumulative sums to the rescue.
-    * **BitParty**: that was fun! Bit Party had huge limits but required some
-      imagination to figure out that binary search was the key.
-    * **EdgyBaking**: A 0-1 knapsack problem, solvable with dynamic programming,
-      was well disguised under Mr. Maillard's edgy baking.
+## Previous editions
+I solved some problems from past editions for practicing. Each top level package refers to a year,
+with second level packages for rounds.
+* codejam2016: round1b, round1c
+* codejam2015: round1c
 
 ## Why Java?
 IDE support, debugger, standard library, good performance, ubiquity.\
