@@ -1,23 +1,34 @@
-# Solutions to problems of Code Jam 2018, 2017 and earlier
+# Solutions to problems of Code Jam 2019, 2018, 2017 and earlier
 
-This repository includes my solutions to the problems of the Google Code Jam competitions up to year 2018.\
-The sources are in Java, and each package contains the solution to one of the rounds. Each source file contains a description of the algorithm used.\
-The *resources* directory contains input datasets, outputs and other support files.\
-A NetBeans project is included to build the solutions.
+This repository includes my solutions to the problems of the Google Code Jam
+competitions up to year 2019, either as submitted during the contest or made on a second thought.
+
+The sources are in Java, and each source file contains a description of the algorithm used.
+The Java packages in the *src* directory contain source code grouped by Code Jam edition and round.
+Unless otherwise noted, everything is judged as correct, either in contest or under practice mode.
+
+The *resources* directory contains input datasets, outputs and other support files.
+Since Code Jam 2018 dataset files are no longer provided, thus what is included here
+is what I assembled from the provided examples and my own test cases.
+
+NetBeans is still my favorite IDE, so a NetBeans project is included.
+
+## Code Jam 2019
+
+* Qualification round:
+    * **Foregone Solution**, O(n) solution
+    * **You Can Go Your Own Way**, O(n) solution
+    * **Cryptopangrams**, small dataset version as submitted during the contest
 
 ## Code Jam 2018
-For Code Jam 2018, I actually participated to the contest. Below are my solutions,
-either as submitted or coded on a second thought. Due to the new contest rules, where dataset
-files are no longer provided, the files under the *codejam2018* subdirectories of *resources*
-are the ones I assembled from the provided examples and my own test cases.
-Unless otherwise noted, everything is judged as correct, either in contest or under practice mode.
-* Package **codejam2018.practice**: problems of the practice session of the new platform.
+
+* Practice session of the new platform:
     * **NumberGuessing**: the new interactive type of problem.
     * **SenateEvacuationMT**: the Senate Evacuation problem, solved with multiple threads just because.
     * **Steed2CruiseControl**: Steed 2: Cruise Control turned out to be so simple I couldn't believe it!
     * There is no source for the fourth problem, Bathroom Stalls, because I lifted it as is
       from my Code Jam 2017 solutions (see package *codejam2017.qualification*).
-* Package **codejam2018.qualification**:
+* Qualification round:
     * **SavingTheUniverseAgain**: pretty straightforward  solution for the Saving The Universe Again problem.
     * **TroubleSortSmallMT**: solution for the small dataset (set 1) of the Trouble Sort problem.
       Unfortunately I misread the limits and incorrectly convinced myself that
@@ -29,17 +40,17 @@ Unless otherwise noted, everything is judged as correct, either in contest or un
     * **CubicUfo**: solving the Cubic UFO geometric problem was a lot of fun.
       I played safely and tried to reproduce the evaluation of the judge, using
       binary search. Special thanks to the cubic candle lying in my kitchen!
-* Package **codejam2018.round1a**:
+* Round 1A:
     * **WaffleChoppers**: rectangular cumulative sums to the rescue.
     * **BitParty**: that was fun! Bit Party had huge limits but required some
       imagination to figure out that binary search was the key.
     * **EdgyBaking**: A 0-1 knapsack problem, solvable with dynamic programming,
       was well disguised under Mr. Maillard's edgy baking.
-* Package **codejam2018.round1b**:
+* Round 1B:
     * **RoundingError**: Rounding Error could be solved by increasing percentages
       whose fractional part is < 0.5.
     * I have not yet solved Mysterious Road Signs and Transmuation.
-* Package **codejam2018.round1c**: the end of my Code Jam :(
+* Round 1C: the end of my Code Jam :(
     * **AWholeNewWordSmall**: Brute-force scan of all the 26^2 combinations for
       test set 1 of the A Whole New Word problem.
     * **AWholeNewWordLarge**: I didn't consider that brute-force would have worked
@@ -51,12 +62,13 @@ Unless otherwise noted, everything is judged as correct, either in contest or un
     * **AntStackGenerator.py**: Python script to find out the largest possible stack.
 
 ## Code Jam 2017
-The repository contains the following programs. I wrote them for practice, and tested them against
-the (now old) Code Jam platform in practice mode, everything being judged as correct.\
+
+I did not participate to the context, but I wrote those solution for practice,
+and tested them against the (now old) Code Jam platform in practice mode.\
 The *runAll.sh* script in the root of the repository can be used to run all programs at once,
 creating the outputs in the *resources* directory.
 
-* Package **codejam2017.finals**: World Finals round of Code Jam 2017.
+* World Finals round:
     * **DiceStraight**: solution for the Dice Straight problem.
     * **OperationGenetic**: first attempt to solve the Operation problem using a genetic approach. Failed to found global optima in a few cases.
     * **Operation**: final attempt to solve the Operation problem.
@@ -68,15 +80,15 @@ creating the outputs in the *resources* directory.
     * **StackManagementLarge**: I couldn't figure this one out by myself. This is from the analysis on the Code Jam website.
     * **TeleportersSmall**: first attempt to solve the Teleporters problem. Not appropriate for the large dataset.
     * **TeleportersLarge**: final attempt to solve the Teleporters problem, using a smarter approach appropriate for the large dataset.
-* Package **codejam2017.qualification**: Qualification round of Code Jam 2017.
+* Qualification round:
     * **OversizedPancakeFlipper**: not the most optimized version, but able to handle the large dataset without problems.
     * **TidyNumbers**: finds tidy numbers with an algorithm proportional to the count of digits.
     * **BathroomStalls**: I'm particularly happy with the constant-time solution I found.
     * **FashionShow**: I gave this a lot of thought. Two tricky observations were needed to handle both datasets.
-* Package **codejam2017.round1a**: Round 1A of Code Jam 2017.
+* Round 1A:
     * **AlphabetCake**: filling the alphabet cake horizontally then vertically.
     * I have not yet solved Ratatouille and Play the dragon.
-* Package **codejam2017.round1b**: Round 1B of Code Jam 2017.
+* Round 1B:
     * Steed 2: Cruise Control can be found in the *codejam2018.practice* package of Code Jam 2018.
     * **StableNeighbors**: the Stable Neigh-bors problem turned out to be tricky.
       My solution is inspired by thread scheduling in operating systems.
@@ -84,7 +96,7 @@ creating the outputs in the *resources* directory.
       where the resulting graph is a DAG.
     * **PonyExpressLarge**: solution for the large dataset of the Pony Express problem,
       using the Dijkstra's algorithm to find the shortest paths.
-* Package **codejam2017.round1c**: Round 1C of Code Jam 2017.
+* Round 1C:
     * **AmpleSyrup**: greedy solution to stack pancakes giving ample surface for syrup!
     * **ParentingPartnering**: coalescing free time intervals between activities performed
       by the same parent was the key to efficient parenting partnering.
