@@ -18,7 +18,8 @@ NetBeans is still my favorite IDE, so a NetBeans project is included.
 * Qualification round:
     * **Foregone Solution**, O(n) solution
     * **You Can Go Your Own Way**, O(n) solution
-    * **Cryptopangrams**, small dataset version as submitted during the contest
+    * **Cryptopangrams** in two versions: a small dataset version as submitted during the contest,
+                          and a retrospective version able to handle the large dataset.
 
 ## Code Jam 2018
 
