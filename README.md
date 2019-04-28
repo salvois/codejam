@@ -20,6 +20,8 @@ NetBeans is still my favorite IDE, so a NetBeans project is included.
     * **You Can Go Your Own Way**, O(n) solution
     * **Cryptopangrams** in two versions: a small dataset version as submitted during the contest,
                           and a retrospective version able to handle the large dataset.
+* Round 1B:
+    * **Draupnir**: constant time solution making two round-trips with the judge.
 
 ## Code Jam 2018
 
