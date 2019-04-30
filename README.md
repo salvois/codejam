@@ -21,7 +21,9 @@ NetBeans is still my favorite IDE, so a NetBeans project is included.
     * **Cryptopangrams** in two versions: a small dataset version as submitted during the contest,
                           and a retrospective version able to handle the large dataset.
 * Round 1B:
+    * **Manhattan Crepe Cart**: small dataset version completed after the context.
     * **Draupnir**: constant time solution making two round-trips with the judge.
+    * **Fair Fight**: small dataset version written after the context.
 
 ## Code Jam 2018
 
