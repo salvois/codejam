@@ -1,7 +1,7 @@
-# Solutions to problems of Code Jam 2019, 2018, 2017 and earlier
+# Solutions to problems of Code Jam 2020, 2019, 2018, 2017 and earlier
 
 This repository includes my solutions to the problems of the Google Code Jam
-competitions up to year 2019, either as submitted during the contest or made on a second thought.
+competitions up to year 2020, either as submitted during the contest or made on a second thought.
 
 The sources are in Java, and each source file contains a description of the algorithm used.
 The Java packages in the *src* directory contain source code grouped by Code Jam edition and round.
@@ -13,6 +13,15 @@ is what I assembled from the provided examples and my own test cases.
 
 NetBeans is still my favorite IDE, so a NetBeans project is included.
 
+## Code Jam 2020
+
+* Qualification round:
+    * **Vestigium**, trivial O(n*n) solution scanning rows and columns for duplicates
+    * **Nesting Depth**, linear solution comparing the current depth with the next digit
+    * **Parenting Partnering Returns**, O(n log n) solution performing a linear scan on sorted activities
+    * **ESAb ATAd**: very fun interactive problem, solved by querying two specular bits
+                     every 10 queries to detect the kind of "quantum fluctuation".
+
 ## Code Jam 2019
 
 * Qualification round:
@@ -21,9 +30,9 @@ NetBeans is still my favorite IDE, so a NetBeans project is included.
     * **Cryptopangrams** in two versions: a small dataset version as submitted during the contest,
                           and a retrospective version able to handle the large dataset.
 * Round 1B:
-    * **Manhattan Crepe Cart**: small dataset version completed after the context.
+    * **Manhattan Crepe Cart**: small dataset version completed after the contest.
     * **Draupnir**: constant time solution making two round-trips with the judge.
-    * **Fair Fight**: small dataset version written after the context.
+    * **Fair Fight**: small dataset version written after the contest.
 
 ## Code Jam 2018
 
