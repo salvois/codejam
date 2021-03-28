@@ -1,7 +1,7 @@
-# Solutions to problems of Code Jam 2020, 2019, 2018, 2017 and earlier
+# Solutions to problems of Code Jam 2021 and earlier
 
 This repository includes my solutions to the problems of the Google Code Jam
-competitions up to year 2020, either as submitted during the contest or made on a second thought.
+competitions up to year 2021, either as submitted during the contest or made on a second thought.
 
 The sources are in Java, and each source file contains a description of the algorithm used.
 The Java packages in the *src* directory contain source code grouped by Code Jam edition and round.
@@ -13,20 +13,27 @@ is what I assembled from the provided examples and my own test cases.
 
 NetBeans is still my favorite IDE, so a NetBeans project is included.
 
+## Code Jam 2021
+
+* Qualification round:
+    * **Reversort**: just the implementation of the proposed algorithm.
+    * **Moons and Umbrellas**: linear greedy solution minimizing the cost, judged as Wrong Answer for the "extra credit" dataset.
+    * **Reversort Engineering**: reasoning about the maximum number of reversal operation for each element was the key.
+
 ## Code Jam 2020
 
 * Qualification round:
-    * **Vestigium**, trivial O(n*n) solution scanning rows and columns for duplicates
-    * **Nesting Depth**, linear solution comparing the current depth with the next digit
-    * **Parenting Partnering Returns**, O(n log n) solution performing a linear scan on sorted activities
+    * **Vestigium**: trivial O(n*n) solution scanning rows and columns for duplicates.
+    * **Nesting Depth**: linear solution comparing the current depth with the next digit.
+    * **Parenting Partnering Returns**: O(n log n) solution performing a linear scan on sorted activities.
     * **ESAb ATAd**: very fun interactive problem, solved by querying two specular bits
                      every 10 queries to detect the kind of "quantum fluctuation".
 
 ## Code Jam 2019
 
 * Qualification round:
-    * **Foregone Solution**, O(n) solution
-    * **You Can Go Your Own Way**, O(n) solution
+    * **Foregone Solution**: O(n) solution.
+    * **You Can Go Your Own Way**: O(n) solution.
     * **Cryptopangrams** in two versions: a small dataset version as submitted during the contest,
                           and a retrospective version able to handle the large dataset.
 * Round 1B:
@@ -64,7 +71,7 @@ NetBeans is still my favorite IDE, so a NetBeans project is included.
     * **RoundingError**: Rounding Error could be solved by increasing percentages
       whose fractional part is < 0.5.
     * I have not yet solved Mysterious Road Signs and Transmuation.
-* Round 1C: the end of my Code Jam :(
+* Round 1C:
     * **AWholeNewWordSmall**: Brute-force scan of all the 26^2 combinations for
       test set 1 of the A Whole New Word problem.
     * **AWholeNewWordLarge**: I didn't consider that brute-force would have worked
